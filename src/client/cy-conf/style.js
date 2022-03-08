@@ -53,12 +53,12 @@ node[NodeType = "CheeseType"][Quality] {
 }
 
 node[NodeType = "WhiteWine"] {
-	background-color: white;
+	background-color: black;
 	text-outline-color: white;
 }
 
 edge[interaction = "cw"] {
-	line-color: white;
+	line-color: black;
 }
 
 node[NodeType = "RedWine"] {
