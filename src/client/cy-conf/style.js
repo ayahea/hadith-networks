@@ -5,6 +5,82 @@ core {
 }
 
 edge {
+	curve-style: bezier;
+	opacity: 0.333;
+	width: 7;
+	z-index: 0;
+	overlay-opacity: 0;
+	target-arrow-shape: triangle;
+  events: no;
+}
+
+node {
+	width: 100;
+	height: 100;
+	font-size: 18;
+	font-weight: bold;
+	min-zoomed-font-size: 4;
+	label: data(label);
+	text-valign: center;
+	text-halign: center;
+	text-wrap: wrap;
+	text-max-width: 110;
+	text-events: yes;
+	color: #000;
+	text-outline-width: 1;
+	text-outline-color: #fff;
+	text-outline-opacity: 1;
+	overlay-color: #fff;
+}
+
+node[gender = "female"] {
+	text-outline-color: #cc99ff;
+	background-color: #cc99ff;
+}
+
+node[gender = "male"] {
+	text-outline-color: #99cc00;
+	background-color: #99cc00;
+}
+
+
+node.highlighted {
+	min-zoomed-font-size: 0;
+  z-index: 9999;
+}
+
+edge.highlighted {
+	opacity: 0.8;
+	width: 4;
+	z-index: 9999;
+}
+
+.faded {
+  events: no;
+}
+
+node.faded {
+  opacity: 0.08;
+}
+
+edge.faded {
+  opacity: 0.06;
+}
+
+.hidden {
+	display: none;
+}
+
+`;
+
+
+/*`
+core {
+	active-bg-color: #fff;
+	active-bg-opacity: 0.333;
+}
+
+edge {
 	curve-style: haystack;
 	haystack-radius: 0;
 	opacity: 0.333;
@@ -102,4 +178,4 @@ edge.faded {
 	display: none;
 }
 
-`;
+`;*/

@@ -237,6 +237,7 @@ class Controller {
       addWords(wordList, data.Milk);
       addWords(wordList, data.Type);
       addWords(wordList, data.Country);
+      addWords(wordList, data.label); // - ayah
         
       node.data('words', wordList);
     };
