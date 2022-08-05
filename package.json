@@ -1,7 +1,7 @@
 {
-  "name": "wineandcheesemap",
+  "name": "hadithnetworks",
   "version": "1.0.0",
-  "description": "A wine and cheese visualisation app",
+  "description": "a visualisation app for hadiths and their narrators",
   "main": "none",
   "browserslist": [
     "defaults"
