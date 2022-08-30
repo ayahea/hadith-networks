@@ -1,7 +1,8 @@
 import { h, Component } from 'preact';
 import { Controller } from '../controller';
 import Cytoscape from 'cytoscape';
-import { elements, style } from '../cy-conf';
+//import { elements, style } from '../cy-conf';
+import { elements_orig, elements_test, style } from '../cy-conf';
 import CytoscapeComponent from './cytoscape';
 import { isDev } from '../env';
 import { NodeInfo } from './node-info';
@@ -11,13 +12,44 @@ class AppComponent extends Component {
   constructor(props){
     super(props);
 
-    const cy = new Cytoscape({
+    //ayah
+    let cy = new Cytoscape();     
+    
+    // I believe this is from the line "h(AppComponent, {'data':..." in each elements' corresponding <XNAME>.js file in src/client. 
+    // So if props.data = 'test' this means it's from the src/client/test.js file which corresponds to elements_test.js
+    console.log(props.data); 
+
+/*    cy = new Cytoscape({ 
       elements,
       style,
-      layout: { name: 'preset' },
+      layout: { 
+        name: 'preset',
+      },
       selectionType: 'single',
       boxSelectionEnabled: false
-    });
+    }); */
+    if (props.data === 'orig') { //this is the default elements_orig.js file (which corresponds to the src/client/orig.js)
+      cy = new Cytoscape({
+        elements: elements_orig,
+        style,
+        layout: { 
+          name: 'preset',
+        },
+        selectionType: 'single',
+        boxSelectionEnabled: false
+      });
+    } 
+    else if (props.data === 'test') {
+      cy = new Cytoscape({
+        elements: elements_test,
+        style,
+        layout: { 
+          name: 'preset',
+        },
+        selectionType: 'single',
+        boxSelectionEnabled: false
+      });
+    } 
 
     cy.nodes().panify().ungrabify();
 

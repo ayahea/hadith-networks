@@ -3439,11 +3439,13 @@ processData(elementscopy.nodes);
 //var elements = elementscopy; //this works when I have export default elements;!!!
 // and then maybe I can change what elements points to depending on feedback from the dropdown menu?
 
-var elements; // this works! now instead of this, take input from a dropdown menu.
-if (1+1 == 2) {
+const elements_orig = elements1;
+// this works! now instead of this, take input from a dropdown menu.
+//var elements;
+/*if (true) {
   elements = elements1;
 } else {
   elements = elementscopy;
-}
+}*/
 
-export default elements; 
+export default elements_orig; 
