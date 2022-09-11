@@ -3434,16 +3434,27 @@ function processData(p) {
     data.name = data.name.replace(/[-]/g, '-\u200B');
   });}
 
-processData(elements1.nodes);
-processData(elementscopy.nodes);
+
+
 //var elements = elementscopy; //this works when I have export default elements;!!!
 // and then maybe I can change what elements points to depending on feedback from the dropdown menu?
 
-var elements; // this works! now instead of this, take input from a dropdown menu.
-if (1+1 == 2) {
-  elements = elements1;
-} else {
-  elements = elementscopy;
-}
+/* THIS IS just ayah tring to get this file to interact with the components somehow 
+//import { Menu } from '../components/menu';
+import { AppComponent } from '../components/app';
+import { Controller } from '../controller';
 
+const controller = new Controller();
+controller.openMenu();*/
+
+var elements; // this works! now instead of this, try to take input from a dropdown menu.
+if (1+1 == 2) {
+    processData(elements1.nodes);
+    elements = elements1;
+} else {
+    processData(elementscopy.nodes);
+    elements = elementscopy;
+} 
+
+//var elements = [elements1, elementscopy];
 export default elements; 

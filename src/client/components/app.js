@@ -11,6 +11,8 @@ class AppComponent extends Component {
   constructor(props){
     super(props);
 
+  // ayah trying to see if an array in elements.js would work  let elements1 = elements[0];
+
     const cy = new Cytoscape({
       elements,
       style,
