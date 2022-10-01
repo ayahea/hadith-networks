@@ -3406,7 +3406,8 @@ const elementscopy = {
    } */
  };
  
- 
+
+
 // process data
 function processData(p) {
   p.forEach((n) => {
@@ -3431,19 +3432,23 @@ function processData(p) {
     };
 
     // zero width space after dashes to allow for line breaking
-    data.name = data.name.replace(/[-]/g, '-\u200B');
+    //data.name = data.name.replace(/[-]/g, '-\u200B');
   });}
 
 processData(elements1.nodes);
 processData(elementscopy.nodes);
+
+
 //var elements = elementscopy; //this works when I have export default elements;!!!
 // and then maybe I can change what elements points to depending on feedback from the dropdown menu?
 
-var elements; // this works! now instead of this, take input from a dropdown menu.
-if (1+1 == 2) {
+const elements_orig = elements1;
+// this works! now instead of this, take input from a dropdown menu. (I don't know if it's possible for this file to interact with input from the html files where the dropdown is)
+//var elements;
+/*if (true) {
   elements = elements1;
 } else {
   elements = elementscopy;
-}
+}*/
 
-export default elements; 
+export default elements_orig; 

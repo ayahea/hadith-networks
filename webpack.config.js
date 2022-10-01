@@ -6,8 +6,10 @@ const nodeEnv = isProd ? 'production' : 'development';
 const conf = {
   mode: nodeEnv,
 
-  entry: {
-    bundle: './src/client/index.js',
+  entry: { 
+   // bundle_test: './src/client/test.js', 
+    bundle_orig: './src/client/orig.js',
+    bundle_test: './src/client/test.js',
     polyfills: './src/client/polyfills.js'
   },
 
