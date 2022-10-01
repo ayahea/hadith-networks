@@ -11,6 +11,7 @@ edge {
 	z-index: 0;
 	overlay-opacity: 0;
 	target-arrow-shape: triangle;
+	content: data(name);
   events: no;
 }
 
