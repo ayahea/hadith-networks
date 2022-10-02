@@ -11,7 +11,14 @@ class NodeInfo extends Component {
     const { name } = data;
     const type = data.NodeTypeFormatted + (data.Type ? ` (${data.Type})` : '');
     const milk = data.Milk;
-    const label = data.label; //ayah
+    /* AYAH */
+    const label = data.label; 
+    const fullname = data.fullname;
+    const gender = data.gender;
+    const generation = data.generation;
+    const info = data.info;
+    const id = data.id;
+    /* ayah */
     const isMilk = milk != null;
     const country = data.Country;
     const hasCountry = country != null;
@@ -22,15 +29,23 @@ class NodeInfo extends Component {
 
 
     return h('div', { class: 'node-info' }, [
-      h('div', { class: 'node-info-name' }, label), //ayah - following commented by me as well
+      //h('div', { class: 'node-info-name' }, label), //ayah - following commented by me as well
    //   h('div', { class: 'node-info-name' }, name),
      // h('div', { class: 'node-info-type' }, type),
       //isMilk ? h('div', { class: 'node-info-milk' }, milk) : null,
       //hasCountry ? h('div', { class: 'node-info-country' }, country) : null,
-      h('div', { class: 'node-info-more' }, h('ul', {}, edges)), // from spacy
-      h('div', { class: 'node-info-more' }, [
+    //  h('div', { class: 'node-info-more' }, h('ul', {}, edges)), // from spacy
+    /*  h('div', { class: 'node-info-more' }, [
         h('a', { target: '_blank', href: `https://google.com/search?q=${q}` }, 'More information')
-      ])
+      ]) */
+      // ayah:
+      h('div', { class: 'node-info-fullname'}, 'Full name: ' + fullname),
+      h('div', { class: 'node-info-info'}, info),
+      h('div', { class: 'node-info-gender'}, 'Gender: ' + gender),
+      h('div', { class: 'node-info-generation'}, 'Generation: ' + generation),
+      h('div', { class: 'node-info-more' }, [
+        h('a', { target: '_blank', href: `https://isnad.io/rawi/${id}` }, 'More information')
+      ]) 
     ]);
   }
 }

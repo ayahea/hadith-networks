@@ -2,7 +2,7 @@ import { h, Component } from 'preact';
 import { Controller } from '../controller';
 import Cytoscape from 'cytoscape';
 //import { elements, style } from '../cy-conf';
-import { elements_orig, elements_test, style } from '../cy-conf';
+import { elements_orig, elements_aishah53, style } from '../cy-conf';
 import CytoscapeComponent from './cytoscape';
 import { isDev } from '../env';
 import { NodeInfo } from './node-info';
@@ -39,9 +39,9 @@ class AppComponent extends Component {
         boxSelectionEnabled: false
       });
     } 
-    else if (props.data === 'test') {
+    else if (props.data === 'aishah53') {
       cy = new Cytoscape({
-        elements: elements_test,
+        elements: elements_aishah53,
         style,
         layout: { 
           name: 'preset',
