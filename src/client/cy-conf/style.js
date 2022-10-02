@@ -11,8 +11,10 @@ edge {
 	z-index: 0;
 	overlay-opacity: 0;
 	target-arrow-shape: triangle;
-	content: data(name);
-  events: no;
+	/* content: data(name); 
+	uncomment this if you want to display info on the edges. 
+	Can change "name" to any other attribute associated with the edges as defined in the element files */
+	events: no;
 }
 
 node {

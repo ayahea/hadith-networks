@@ -9,7 +9,7 @@ const conf = {
   entry: { 
    // bundle_test: './src/client/test.js', 
     bundle_orig: './src/client/orig.js',
-    bundle_test: './src/client/test.js',
+    bundle_aishah53: './src/client/aishah53.js',
     polyfills: './src/client/polyfills.js'
   },
 

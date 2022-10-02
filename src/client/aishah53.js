@@ -15,6 +15,6 @@ const root = document.createElement('div');
 root.setAttribute('id', 'root');
 document.body.appendChild(root);
 
-render(h(AppComponent, {'data': 'test'}), root);
+render(h(AppComponent, {'data': 'aishah53'}), root);
 
 console.log(`You can view the source code of this Cytoscape.js-powered app at https://github.com/cytoscape/wineandcheesemap`);
