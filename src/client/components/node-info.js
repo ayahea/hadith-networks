@@ -34,11 +34,11 @@ class NodeInfo extends Component {
      // h('div', { class: 'node-info-type' }, type),
       //isMilk ? h('div', { class: 'node-info-milk' }, milk) : null,
       //hasCountry ? h('div', { class: 'node-info-country' }, country) : null,
-    //  h('div', { class: 'node-info-more' }, h('ul', {}, edges)), // from spacy
     /*  h('div', { class: 'node-info-more' }, [
         h('a', { target: '_blank', href: `https://google.com/search?q=${q}` }, 'More information')
       ]) */
       // ayah:
+      //  h('div', { class: 'node-info-more' }, h('ul', {}, edges)), // from spacy
       h('div', { class: 'node-info-fullname'}, 'Full name: ' + fullname),
       h('div', { class: 'node-info-info'}, info),
       h('div', { class: 'node-info-gender'}, 'Gender: ' + gender),

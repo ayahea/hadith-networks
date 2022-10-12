@@ -10,6 +10,11 @@
   margin: 0.5em;
   font-size: 0.8em;
   color: #fff;
+  /*ayah - to prevent super long boxes */
+  width: 400px;
+  line-height: 1.5;
+  max-height: 200px;
+  overflow: auto;
 }
 
 .node-info-name {

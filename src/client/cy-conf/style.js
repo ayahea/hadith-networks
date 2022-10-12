@@ -24,10 +24,10 @@ node {
 	font-weight: bold;
 	min-zoomed-font-size: 4;
 	label: data(label);
+	text-wrap: wrap;
+	text-max-width: 50;
 	text-valign: center;
 	text-halign: center;
-	text-wrap: wrap;
-	text-max-width: 110;
 	text-events: yes;
 	color: #000;
 	text-outline-width: 1;
@@ -49,7 +49,7 @@ node[gender = "male"] {
 
 node.highlighted {
 	min-zoomed-font-size: 0;
-  z-index: 9999;
+	z-index: 9999;
 }
 
 edge.highlighted {
