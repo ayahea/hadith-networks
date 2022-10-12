@@ -1,5 +1,10 @@
 # hadith-networks
  Digital humanities project using network visualizations to explore hadiths and their narrators. 
+ 
+ ## View online:
+ The user-interactive graph can be seen at https://ayahea.github.io/hadith-networks/. 
+ 
+ ## Run locally:
 
 When running for the first time, run the following first:
 - `rm -rf node_modules`
