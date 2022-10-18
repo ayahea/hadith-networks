@@ -18,14 +18,14 @@ edge {
 }
 
 node {
-	width: 100;
-	height: 100;
-	font-size: 18;
+	width: 30;
+	height: 30;
+	font-size: 8;
 	font-weight: bold;
-	min-zoomed-font-size: 4;
+	min-zoomed-font-size: 8;
 	label: data(label);
 	text-wrap: wrap;
-	text-max-width: 50;
+	text-max-width: 10;
 	text-valign: center;
 	text-halign: center;
 	text-events: yes;

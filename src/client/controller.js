@@ -231,13 +231,17 @@ class Controller {
       const data = node.data();
       const wordList = [];
       
-      addWords(wordList, data.name);
+     // addWords(wordList, data.name); ayah commented for now
       addWords(wordList, data.Synonym);
       addWords(wordList, data.NodeTypeFormatted);
       addWords(wordList, data.Milk);
       addWords(wordList, data.Type);
       addWords(wordList, data.Country);
-      addWords(wordList, data.label); // - ayah
+      // - ayah
+      addWords(wordList, data.label); 
+      addWords(wordList, data.fullname); 
+      addWords(wordList, data.searchname); 
+      // ^ ayah
         
       node.data('words', wordList);
     };
