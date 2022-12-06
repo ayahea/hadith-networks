@@ -1,8 +1,8 @@
 # hadith-networks
- Digital humanities project using network visualizations to explore hadiths and their narrators. 
+ This is an early version of the interactive graph for the Muhaddithat Networks digital humanities project. [It is based off of this GitHub repo](https://github.com/ting830812/spacy-test). 
  
  ## View online:
- The user-interactive graph can be seen at https://ayahea.github.io/hadith-networks/. 
+ The user-interactive graph can be seen at https://ayahea.github.io/hadith-networks/. Note that this is an early version. 
  
  ## Run locally:
 
